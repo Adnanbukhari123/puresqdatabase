@@ -12,8 +12,8 @@ func CreateUsersTableUp(db *gorm.DB) {
             id SERIAL PRIMARY KEY,
             first_name VARCHAR(50) NOT NULL,
             last_name VARCHAR(50) NOT NULL,
-            email VARCHAR(50) NOT NULL,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            email VARCHAR(50) NOT NULL UNIQUE ,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP               
         );
     `).Error
