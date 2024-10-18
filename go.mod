@@ -1,4 +1,4 @@
-module puresqdatabase
+module github.com/Adnanbukhari123/puresqdatabase
 
 go 1.23.2
 
